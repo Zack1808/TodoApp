@@ -1,0 +1,11 @@
+#checkbox {
+    display: inline-block;
+    aspect-ratio: 1;
+    width: 30px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.checked {
+    background-color: rgb(0, 94, 0);
+}
