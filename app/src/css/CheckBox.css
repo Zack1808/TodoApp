@@ -1,11 +1,23 @@
 #checkbox {
-    display: inline-block;
+    display: flex;
     aspect-ratio: 1;
-    width: 30px;
-    border: 2px solid #000;
+    width: 35px;
+    margin: 20px;
+    border: 2px solid rgb(82, 82, 82);
     border-radius: 5px;
 }
 
 .checked {
-    background-color: rgb(0, 94, 0);
+    background-color: #4bb543;
+}
+
+#checkmark{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
 }
