@@ -3,8 +3,13 @@
     aspect-ratio: 1;
     width: 35px;
     margin: 20px;
-    border: 2px solid rgb(82, 82, 82);
-    border-radius: 5px;
+    border: 1px solid rgb(82, 82, 82);
+}
+
+#checkbox:focus {
+    box-shadow: 5px 5px 5px rgba(0,0,0,.4);
+    border: 2px solid rgb(82, 82, 82)
+
 }
 
 .checked {

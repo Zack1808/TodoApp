@@ -11,8 +11,13 @@ const CheckBox = () => {
         setIsChecked(!isChecked);
     }
 
+    // Creating funciton that will handle the keypress
+    const handleKeyPress = (event) => {
+        if(event.key === "Enter" || event.key === " ") toggleCheckBox()
+    }
+
     return (
-        <div id="checkbox" onClick={toggleCheckBox} className={isChecked ? "checked" : ""}>
+        <div id="checkbox" onClick={toggleCheckBox} className={isChecked ? "checked" : ""} tabIndex="1" onKeyUp={handleKeyPress}>
             {isChecked && <span id="checkmark">✓</span>}
         </div>
     );
