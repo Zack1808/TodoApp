@@ -1,15 +1,24 @@
-#checkbox {
+.checkbox-value{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.checkbox {
     display: flex;
     aspect-ratio: 1;
-    width: 35px;
+    width: 30px;
     margin: 20px;
     border: 1px solid rgb(82, 82, 82);
 }
 
-#checkbox:focus {
-    box-shadow: 5px 5px 5px rgba(0,0,0,.4);
-    border: 2px solid rgb(82, 82, 82)
-
+.checkbox-value:focus + .checkbox {
+    box-shadow: 0 0 20px rgba(0,0,0,.4);
+    border: 2px solid rgb(82, 82, 82);
 }
 
 .checked {
