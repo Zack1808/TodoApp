@@ -8,7 +8,7 @@ const App = () => {
         <div>
             <CheckBox />
             <CheckBox />
-            <Button />
+            <Button onClick={() => console.log("clicked")} type="button" buttonStyle="btn--success--outline" buttonSize="btn--medium">Hello</Button>
         </div>
     )
 };
