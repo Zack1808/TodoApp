@@ -2,7 +2,7 @@
     --primary: #4628ff;
     --warning: #ffd028;
     --danger: #eb3f27;
-    --success: #75fa83;
+    --success: #4bb543;
     --white: #fdfdfd;
     --dark: #181717;
 }
@@ -12,6 +12,7 @@
     font-weight: 400;
     border-radius: 10px;
     cursor: pointer;
+    margin: 10px;
     transition: transform .3s ease;
 }
 
