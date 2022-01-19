@@ -2,9 +2,9 @@ import React from 'react';
 
 import "../css/Input.css"
 
-const Input = ({ placeholder = "Enter text" }) => {
+const Input = ({ placeholder = "Enter text", onChange, value }) => {
     return(
-        <input className="input" type="text" placeholder={placeholder}></input>
+        <input value={value} onChange={onChange} className="input" type="text" placeholder={placeholder}></input>
     )
 };
 

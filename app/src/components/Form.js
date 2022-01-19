@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 import Button from './Button';
+import Input from './Input';
 import "../css/Input.css"
 
 const Form = ({ placeholder = "Enter text", btnText = "Enter button text", onSubmit }) => {
@@ -22,7 +23,8 @@ const Form = ({ placeholder = "Enter text", btnText = "Enter button text", onSub
 
     return(
         <form style={{display: "flex"}} onSubmit={formSubmition} >
-            <input value={inputData} onChange={changeInputValue} className="input" type="text" placeholder={placeholder}></input>
+            {/* <input value={inputData} onChange={changeInputValue} className="input" type="text" placeholder={placeholder}></input> */}
+            <Input placeholder={placeholder} onChange={changeInputValue} value={inputData}/>
             <Button type="submit" buttonStyle="btn--success--solid" buttonSize="btn--medium">{btnText}</Button>
         </form>
     )
